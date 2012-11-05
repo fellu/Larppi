@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load url from future %}
+
+
+{% block content %}
+
+<h3>Add a new event</h3>
+
+<form action="{% url 'add_event' %}" method="post" id="event_add_form" class="form">
+{%  csrf_token  %}
+    {{ new_event.errors }}
+    {{ new_event.as_p }}
+    <button>Add</button>
+</form>
+
+{% endblock %}

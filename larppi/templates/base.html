@@ -1,0 +1,67 @@
+<!doctype html>
+{% load staticfiles %}
+{% load url from future %}
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="{% static "stylesheets/reset.css" %}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% static "stylesheets/typography.css" %}" type="text/css" media="screen">
+    <link rel="stylesheet" href="{% static "stylesheets/grainfield.css" %}" type="text/css" media="screen">
+    {% block javascript %}{% endblock %}
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="wrap">
+            <div id="title">
+                <p>
+                    <a href="/">Larppi.fi - Pelitietokanta</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="navigation">
+            <div class="wrap group">
+
+                <ul>
+                    <li>
+                        <a href="{% url 'games' %}">Tulevat pelit</a>
+                    </li>
+                    {% if logged_user.is_authenticated %}
+
+                        <li>
+                            <a href="{% url 'logout' %}">Logout ({{ logged_user }})</a>
+                        </li>
+                    {% else %}
+                        <li>
+                            <a href="{% url 'login' %}">Login</a>
+                        </li>
+                    {% endif %}
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="secondary-level">
+        <div class="wrap group">
+            {% block submenu %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <div id="main" class="wrap group">
+
+        <div id="content">
+
+            {% block content %}{% endblock %}
+
+        </div><!-- #content -->
+        <div id="footer" class="group">
+            <p>Developed by <a href="http://skyred.fi/">SkyRed</a></p>
+        </div>
+    </div><!-- #main -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load url from future %}
+
+{% block submenu %}
+    <ul id="submenu">
+        <li><a href="{% url 'add_venue'  %}">Lisää pelipaikka</a></li>
+        <li><a href="{% url 'add_event'  %}">Lisää peli</a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+
+    <ul class="game-listing">
+    {% for event in events %}
+
+        <li>
+            <h3>{{ event }}</h3>
+            <h6>{{ event.where }}</h6>
+            <h6>{{ event.when_from|date:"d.m Y" }} &mdash; {{ event.when_to|date:"d.m Y" }}</h6>
+            {% autoescape off %}
+            {{ event.details }}
+            {% endautoescape %}
+            <p>Lisäsi järjestelmään: <a href="#">{{ event.submitter|capfirst }}</a> @ {{ event.created|date:"d.m Y H:i" }}</p>
+        </li>
+
+    {% endfor %}
+    </ul>
+
+{% endblock %}

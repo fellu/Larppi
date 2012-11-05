@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="4" model="contenttypes.contenttype">
+        <field type="CharField" name="name">content type</field>
+        <field type="CharField" name="app_label">contenttypes</field>
+        <field type="CharField" name="model">contenttype</field>
+    </object>
+    <object pk="11" model="contenttypes.contenttype">
+        <field type="CharField" name="name">event</field>
+        <field type="CharField" name="app_label">games</field>
+        <field type="CharField" name="model">event</field>
+    </object>
+    <object pk="9" model="contenttypes.contenttype">
+        <field type="CharField" name="name">game</field>
+        <field type="CharField" name="app_label">games</field>
+        <field type="CharField" name="model">game</field>
+    </object>
+    <object pk="2" model="contenttypes.contenttype">
+        <field type="CharField" name="name">group</field>
+        <field type="CharField" name="app_label">auth</field>
+        <field type="CharField" name="model">group</field>
+    </object>
+    <object pk="7" model="contenttypes.contenttype">
+        <field type="CharField" name="name">log entry</field>
+        <field type="CharField" name="app_label">admin</field>
+        <field type="CharField" name="model">logentry</field>
+    </object>
+    <object pk="8" model="contenttypes.contenttype">
+        <field type="CharField" name="name">migration history</field>
+        <field type="CharField" name="app_label">south</field>
+        <field type="CharField" name="model">migrationhistory</field>
+    </object>
+    <object pk="1" model="contenttypes.contenttype">
+        <field type="CharField" name="name">permission</field>
+        <field type="CharField" name="app_label">auth</field>
+        <field type="CharField" name="model">permission</field>
+    </object>
+    <object pk="5" model="contenttypes.contenttype">
+        <field type="CharField" name="name">session</field>
+        <field type="CharField" name="app_label">sessions</field>
+        <field type="CharField" name="model">session</field>
+    </object>
+    <object pk="6" model="contenttypes.contenttype">
+        <field type="CharField" name="name">site</field>
+        <field type="CharField" name="app_label">sites</field>
+        <field type="CharField" name="model">site</field>
+    </object>
+    <object pk="3" model="contenttypes.contenttype">
+        <field type="CharField" name="name">user</field>
+        <field type="CharField" name="app_label">auth</field>
+        <field type="CharField" name="model">user</field>
+    </object>
+    <object pk="12" model="contenttypes.contenttype">
+        <field type="CharField" name="name">user profile</field>
+        <field type="CharField" name="app_label">accounts</field>
+        <field type="CharField" name="model">userprofile</field>
+    </object>
+    <object pk="10" model="contenttypes.contenttype">
+        <field type="CharField" name="name">venue</field>
+        <field type="CharField" name="app_label">games</field>
+        <field type="CharField" name="model">venue</field>
+    </object>
+    <object pk="214d8a2ecb8090080c33e7422f16a0b4" model="sessions.session">
+        <field type="TextField" name="session_data">YTkwNDI5NTFkMWRkZDg2ODcwNzc0YjBkMDYwNWE4MTYxYTA4YzBjZjqAAn1xAShVEl9hdXRoX3Vz
+ZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED
+VQ1fYXV0aF91c2VyX2lkcQRLAXUu
+</field>
+        <field type="DateTimeField" name="expire_date">2012-09-23T18:50:37.066050+00:00</field>
+    </object>
+    <object pk="1" model="sites.site">
+        <field type="CharField" name="domain">example.com</field>
+        <field type="CharField" name="name">example.com</field>
+    </object>
+    <object pk="1" model="games.venue">
+        <field type="CharField" name="name">Pilke</field>
+        <field type="CharField" name="city">Rovaniemi</field>
+        <field type="CharField" name="address">Ounasjoentie 6</field>
+        <field type="TextField" name="description">Pilke-talo on Metsähallituksen uusi toimitalo, joka valmistui Rovaniemelle syksyllä 2010. Talossa sijaitseva tiedekeskus Pilke, kaiken kansan käynti- ja oppimiskohde, kertoo pohjoisten metsien kestävästä käytöstä.</field>
+    </object>
+    <object pk="2" model="games.venue">
+        <field type="CharField" name="name">Isojärven leirimaja</field>
+        <field type="CharField" name="city">Pornainen</field>
+        <field type="CharField" name="address">Suvirannantie 210, 07190 Halkia</field>
+        <field type="TextField" name="description">Alueeseen kuuluu kaksi mökkiä ja sauna uimarannan läheisyydessä. Ei sisävessaa, mutta juokseva vesi ja tilava nykyaikainen keittiö löytyvät. Yöpyjille löytyy valtavasti patjoja ja jonkun verran tyynyjä ja peittoja.</field>
+    </object>
+    <object pk="34" model="auth.permission">
+        <field type="CharField" name="name">Can add user profile</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">12</field>
+        <field type="CharField" name="codename">add_userprofile</field>
+    </object>
+    <object pk="35" model="auth.permission">
+        <field type="CharField" name="name">Can change user profile</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">12</field>
+        <field type="CharField" name="codename">change_userprofile</field>
+    </object>
+    <object pk="36" model="auth.permission">
+        <field type="CharField" name="name">Can delete user profile</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">12</field>
+        <field type="CharField" name="codename">delete_userprofile</field>
+    </object>
+    <object pk="19" model="auth.permission">
+        <field type="CharField" name="name">Can add log entry</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="CharField" name="codename">add_logentry</field>
+    </object>
+    <object pk="20" model="auth.permission">
+        <field type="CharField" name="name">Can change log entry</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="CharField" name="codename">change_logentry</field>
+    </object>
+    <object pk="21" model="auth.permission">
+        <field type="CharField" name="name">Can delete log entry</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="CharField" name="codename">delete_logentry</field>
+    </object>
+    <object pk="1" model="auth.permission">
+        <field type="CharField" name="name">Can add group</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="codename">add_group</field>
+    </object>
+    <object pk="4" model="auth.permission">
+        <field type="CharField" name="name">Can change group</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="codename">change_group</field>
+    </object>
+    <object pk="7" model="auth.permission">
+        <field type="CharField" name="name">Can delete group</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="codename">delete_group</field>
+    </object>
+    <object pk="2" model="auth.permission">
+        <field type="CharField" name="name">Can add permission</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="codename">add_permission</field>
+    </object>
+    <object pk="5" model="auth.permission">
+        <field type="CharField" name="name">Can change permission</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="codename">change_permission</field>
+    </object>
+    <object pk="8" model="auth.permission">
+        <field type="CharField" name="name">Can delete permission</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="codename">delete_permission</field>
+    </object>
+    <object pk="3" model="auth.permission">
+        <field type="CharField" name="name">Can add user</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="CharField" name="codename">add_user</field>
+    </object>
+    <object pk="6" model="auth.permission">
+        <field type="CharField" name="name">Can change user</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="CharField" name="codename">change_user</field>
+    </object>
+    <object pk="9" model="auth.permission">
+        <field type="CharField" name="name">Can delete user</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="CharField" name="codename">delete_user</field>
+    </object>
+    <object pk="10" model="auth.permission">
+        <field type="CharField" name="name">Can add content type</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">4</field>
+        <field type="CharField" name="codename">add_contenttype</field>
+    </object>
+    <object pk="11" model="auth.permission">
+        <field type="CharField" name="name">Can change content type</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">4</field>
+        <field type="CharField" name="codename">change_contenttype</field>
+    </object>
+    <object pk="12" model="auth.permission">
+        <field type="CharField" name="name">Can delete content type</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">4</field>
+        <field type="CharField" name="codename">delete_contenttype</field>
+    </object>
+    <object pk="25" model="auth.permission">
+        <field type="CharField" name="name">Can add event</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="CharField" name="codename">add_event</field>
+    </object>
+    <object pk="28" model="auth.permission">
+        <field type="CharField" name="name">Can change event</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="CharField" name="codename">change_event</field>
+    </object>
+    <object pk="31" model="auth.permission">
+        <field type="CharField" name="name">Can delete event</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="CharField" name="codename">delete_event</field>
+    </object>
+    <object pk="26" model="auth.permission">
+        <field type="CharField" name="name">Can add game</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">9</field>
+        <field type="CharField" name="codename">add_game</field>
+    </object>
+    <object pk="29" model="auth.permission">
+        <field type="CharField" name="name">Can change game</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">9</field>
+        <field type="CharField" name="codename">change_game</field>
+    </object>
+    <object pk="32" model="auth.permission">
+        <field type="CharField" name="name">Can delete game</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">9</field>
+        <field type="CharField" name="codename">delete_game</field>
+    </object>
+    <object pk="27" model="auth.permission">
+        <field type="CharField" name="name">Can add venue</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="CharField" name="codename">add_venue</field>
+    </object>
+    <object pk="30" model="auth.permission">
+        <field type="CharField" name="name">Can change venue</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="CharField" name="codename">change_venue</field>
+    </object>
+    <object pk="33" model="auth.permission">
+        <field type="CharField" name="name">Can delete venue</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="CharField" name="codename">delete_venue</field>
+    </object>
+    <object pk="13" model="auth.permission">
+        <field type="CharField" name="name">Can add session</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="CharField" name="codename">add_session</field>
+    </object>
+    <object pk="14" model="auth.permission">
+        <field type="CharField" name="name">Can change session</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="CharField" name="codename">change_session</field>
+    </object>
+    <object pk="15" model="auth.permission">
+        <field type="CharField" name="name">Can delete session</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="CharField" name="codename">delete_session</field>
+    </object>
+    <object pk="16" model="auth.permission">
+        <field type="CharField" name="name">Can add site</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="CharField" name="codename">add_site</field>
+    </object>
+    <object pk="17" model="auth.permission">
+        <field type="CharField" name="name">Can change site</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="CharField" name="codename">change_site</field>
+    </object>
+    <object pk="18" model="auth.permission">
+        <field type="CharField" name="name">Can delete site</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="CharField" name="codename">delete_site</field>
+    </object>
+    <object pk="22" model="auth.permission">
+        <field type="CharField" name="name">Can add migration history</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">8</field>
+        <field type="CharField" name="codename">add_migrationhistory</field>
+    </object>
+    <object pk="23" model="auth.permission">
+        <field type="CharField" name="name">Can change migration history</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">8</field>
+        <field type="CharField" name="codename">change_migrationhistory</field>
+    </object>
+    <object pk="24" model="auth.permission">
+        <field type="CharField" name="name">Can delete migration history</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">8</field>
+        <field type="CharField" name="codename">delete_migrationhistory</field>
+    </object>
+    <object pk="1" model="auth.user">
+        <field type="CharField" name="username">jussi</field>
+        <field type="CharField" name="first_name"></field>
+        <field type="CharField" name="last_name"></field>
+        <field type="CharField" name="email">jussir@gmail.com</field>
+        <field type="CharField" name="password">pbkdf2_sha256$10000$O5CKlgBYxOnO$r/mmr74TWN4hgdvjOoZZDb7YLmWgwaBpVlMXJiKk02M=</field>
+        <field type="BooleanField" name="is_staff">True</field>
+        <field type="BooleanField" name="is_active">True</field>
+        <field type="BooleanField" name="is_superuser">True</field>
+        <field type="DateTimeField" name="last_login">2012-09-09T18:50:36.957545+00:00</field>
+        <field type="DateTimeField" name="date_joined">2012-09-09T18:45:59.193786+00:00</field>
+        <field to="auth.group" name="groups" rel="ManyToManyRel"></field>
+        <field to="auth.permission" name="user_permissions" rel="ManyToManyRel"></field>
+    </object>
+    <object pk="5" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2012-09-09T18:58:36.325653+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="TextField" name="object_id">2</field>
+        <field type="CharField" name="object_repr">Stargate: Lost Chapters of Pilke </field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="4" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2012-09-09T18:57:22.989621+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">Susijärven krouvi</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="3" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2012-09-09T18:56:10.311335+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="TextField" name="object_id">2</field>
+        <field type="CharField" name="object_repr">Isojärven leirimaja</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="2" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2012-09-09T18:54:45.096913+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">Pilke</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">1</field>
+        <field type="TextField" name="change_message"></field>
+    </object>
+    <object pk="1" model="admin.logentry">
+        <field type="DateTimeField" name="action_time">2012-09-09T18:49:36.713087+00:00</field>
+        <field to="auth.user" name="user" rel="ManyToOneRel">1</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="TextField" name="object_id">1</field>
+        <field type="CharField" name="object_repr">example.com</field>
+        <field type="PositiveSmallIntegerField" name="action_flag">2</field>
+        <field type="TextField" name="change_message">No fields changed.</field>
+    </object>
+    <object pk="1" model="games.event">
+        <field to="auth.user" name="submitter" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="title">Susijärven krouvi</field>
+        <field type="TextField" name="details">Syksyn tuulet puhalsivat raakaa, jäätävän kylmää ilmaa pohjoisesta, ja rankkasade piiskasi ikkunoita, kun ukkosmyrsky rytisteli pienen Verthelmin kylän yllä. Susijärven krouvi sen sijaan tulvi takkatulen tuomaa lämpöä ja kynttilöiden pehmeää, väreilevää valoa, eikä syksyinen harmaa pimeys lannistanut tavernassa iltaa viettävien ihmisten hilpeyttä. Nauru raikui ja juopottelevien nuorukaisten äänekäs väittely sekoittui yleiseen puheensorinaan ja vauhdikkaaseen musiikkiin. Keimailevat tarjoilijat kantoivat pöytiin ruokaa ja juomaa, viini virtasi ja raha vaihtoi omistajaa uhkapelurien kesken. Ulkona kauempana kaikuvaa riipivää ulvontaa ja tuskaista huutoa ei kukaan tavernan väestä kuullut... </field>
+        <field type="DateTimeField" name="when_from">2012-09-01T18:56:36+00:00</field>
+        <field type="DateTimeField" name="when_to">2012-09-03T18:56:43+00:00</field>
+        <field to="games.venue" name="where" rel="ManyToOneRel">2</field>
+        <field type="IntegerField" name="fee">15</field>
+        <field to="games.game" name="game" rel="ManyToOneRel"><None></None></field>
+        <field type="DateTimeField" name="created">2012-09-09T18:57:22.988647+00:00</field>
+        <field type="DateTimeField" name="modified">2012-09-09T18:57:22.988678+00:00</field>
+    </object>
+    <object pk="2" model="games.event">
+        <field to="auth.user" name="submitter" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="title">Stargate: Lost Chapters of Pilke </field>
+        <field type="TextField" name="details">Stargate, tunnetaan myös tähtiporttina tai Chaapa-aina, on laite, joka kuljettaa matkustajansa ympäri galaksin luoden madonreiän planeettojen väliin. Jotkut käyttävät tähtiporttia etsiäkseen uusia yhteistyökumppaneita toiset vain seikkaillakseen muilla planeetoilla. Eräät kuitenkin käyttävät tähtiporttia vain pahaan. Mutta mitä ihmettä tekee Kakkumestari keskellä tätä kaikkea?</field>
+        <field type="DateTimeField" name="when_from">2012-08-31T18:58:03+00:00</field>
+        <field type="DateTimeField" name="when_to">2012-09-01T18:58:04+00:00</field>
+        <field to="games.venue" name="where" rel="ManyToOneRel">1</field>
+        <field type="IntegerField" name="fee">15</field>
+        <field to="games.game" name="game" rel="ManyToOneRel"><None></None></field>
+        <field type="DateTimeField" name="created">2012-09-09T18:58:36.324351+00:00</field>
+        <field type="DateTimeField" name="modified">2012-09-09T18:58:36.324382+00:00</field>
+    </object>
+    <object pk="1" model="accounts.userprofile">
+        <field to="auth.user" name="user" rel="OneToOneRel">1</field>
+        <field type="IntegerField" name="twitter_id"><None></None></field>
+        <field type="BooleanField" name="profile_complete">True</field>
+        <field type="CharField" name="flair">new</field>
+        <field type="CharField" name="favorite_animal">Dragons.</field>
+    </object>
+</django-objects>

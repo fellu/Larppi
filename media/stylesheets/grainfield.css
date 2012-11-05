@@ -1,0 +1,40 @@
+/**
+etkö vittu tiiä t jussi ja fellu
+ps. kai hiukset kiiltää?
+**/
+body { color: #444; }
+.wrap { width: 940px; margin: 0 auto; }
+#header { background: #444; color: #fff; margin-bottom: 0.833em; padding: 1em 0 0 0; }
+#header p { padding: 0; margin: 0; font-size: 1.333em; }
+#header #title { margin-bottom: 1em;  }
+#header #title p { font-weight: bold; }
+#header #title a { color: #fff; }
+
+#navigation { margin-top: 0.833em; }
+#navigation ul { list-style-type: none; }
+#navigation li { display: inline; float: left; background: #fff; margin-right: 1em; border-left: 2px solid #696; }
+#navigation li a {  color: #696; padding: 0.333em 0.5em 0 0.5em; float: left; text-decoration: none; font-weight: bold; }
+#secondary-level #submenu { clear: both; display: block }
+#secondary-level #submenu li { float: left; padding: 6px; background: #e1e1e1; }
+#secondary-level #submenu li a { text-decoration: none; color: #666; }
+#secondary-level { background-color: #fff; }
+
+#main #content { margin: 0.5em 0 2em 0; float: left; }
+#main #content h1 { margin-bottom: 0.5em; }
+#main #content h2 { margin-bottom: 0.5em; }
+#main #event_add_form p { clear: both; }
+#main #event_add_form p label { clear: both; display: block; }
+
+#main #content .game-listing h6 { padding: 0; margin: 0 0 0.5em 0; }
+#main #content .game-listing li { border-bottom: 1px solid #e1e1e1; padding: 0 0 1em 0; }
+
+/* User content styles */
+#main #content .game-listing li ul { display: block; list-style-type: disc; margin-left: 1.33em; }
+#main #content .game-listing li ul li { display: list-item; clear: both; border: 0; margin-left: 1.33em; }
+#main #footer { padding: 1em 0 1em 0; clear: both;}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}

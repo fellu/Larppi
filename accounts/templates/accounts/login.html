@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load url from future %}
+
+{% block content %}
+
+    <div>
+
+        <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+            <p>
+                <label>Username</label>
+                <input type="text" name="username"></input>
+            </p>
+            <p>
+                <label>Password</label>
+                <input type="password" name="password"></input>
+            </p>
+            <p><button>Login</button></p>
+        </form>
+
+    </div>
+
+{% endblock %}
