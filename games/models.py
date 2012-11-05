@@ -20,7 +20,7 @@ class Venue(models.Model):
 
 
 class Event(models.Model):
-    submitter = models.ForeignKey(User, editable=False, verbose_name=u"Lisääjä")
+    submitter = models.ForeignKey(User, editable=False, verbose_name=u"Lisääjä", blank=True, null=True)
     title = models.CharField(max_length=100, verbose_name=u"Pelin nimi")
     details = models.TextField(verbose_name=u"Lisätietoja")
     when_from = models.DateTimeField(blank=True, null=True, verbose_name=u"Mistä")
