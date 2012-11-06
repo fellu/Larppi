@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="1" model="games.venue">
+        <field type="CharField" name="name">Tippsundin leirikeskus</field>
+        <field type="CharField" name="city">Taivassalo</field>
+        <field type="CharField" name="address">Kahiluodontie 386</field>
+        <field type="TextField" name="description"></field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="2" model="games.venue">
+        <field type="CharField" name="name">Lärkansin partiomaja</field>
+        <field type="CharField" name="city">Espoo</field>
+        <field type="CharField" name="address">Ruuhijärventie 5, Nuuksio</field>
+        <field type="TextField" name="description">Pelipaikalla löytyy sängyt, mutta petivaatteet/makuupussi tulee tuoda itse, koska näitä pelipaikka ei tarjoa. </field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="3" model="games.venue">
+        <field type="CharField" name="name">Pihlajamäen nuorisotalo</field>
+        <field type="CharField" name="city">Helsinki</field>
+        <field type="CharField" name="address"></field>
+        <field type="TextField" name="description">Pelipaikalla ei voi yöpyä ja sieltä on poistuttava viimeistään klo 23. mennessä</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="4" model="games.venue">
+        <field type="CharField" name="name">Kirkkonummi</field>
+        <field type="CharField" name="city">Kirkkonummi</field>
+        <field type="CharField" name="address"></field>
+        <field type="TextField" name="description"></field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="5" model="games.venue">
+        <field type="CharField" name="name">Vanha hoitokoti Jämsässä</field>
+        <field type="CharField" name="city">Jämsä</field>
+        <field type="CharField" name="address">Alhojärventie 80</field>
+        <field type="TextField" name="description">Pelipaikkaan kuuluu suuri päärakennus piharakennuksineen. Pelaajat majoittuvat päärakennuksessa mahdollista muutamaa poikkeusta lukuun ottamatta. Jokaiselle ei oletusarvoisesti riitä vuodepaikkaa, mutta pelinjohto järjestää patjoja sekä kenttävuoteita pelaajien käyttöön.
+
+Pelipaikalla on sauna, joka lämpenee sekä in- että offgame pelaajien pyyntöjen sekä tarpeiden mukaan.</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="6" model="games.venue">
+        <field type="CharField" name="name">Antaverkan leirikeskus</field>
+        <field type="CharField" name="city">Ylöjärvi</field>
+        <field type="CharField" name="address">Antaverkantie 279</field>
+        <field type="TextField" name="description">Paikka on noin. 20 kilometrin päässä Tampereen keskustasta. Tarpeen vaatiessa Tampereen rautatieasemalta järjestetään yhteiskuljetus pelipaikalle ja sieltä pois, ilmoitathan tarpeestasi tähän hyvissä ajoin. Paikalle saa tulla myös omalla autolla, mutta parkkitilaa on rajoitetusti, eli otattehan kyytiin mahdollisimman paljon muita pelaajia, jotta voidaan pitää autojen määrä minimissä :)
+
+Pelipaikalle ei saa tuoda alkoholia, kaiken tupakoinnin täytyy tapahtua ulkona ja kengät täytyy jättää aina sisään tullessa eteiseen. Kannattaa siis ottaa kengät, joiden jalkaan laittamisessa ei mene ikuisuutta.</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="7" model="games.venue">
+        <field type="CharField" name="name">Piippo-keskus</field>
+        <field type="CharField" name="city">Lempäälä</field>
+        <field type="CharField" name="address">Piiponraitti 1</field>
+        <field type="TextField" name="description">Entinen Piipon tehtaan kolmas kerros toimii tätä nykyä kulttuuritilana. Se tarjoaa yhdistyksille, toimintaryhmille, yksityishenkilöille ja yrityksille paikan järjestää näyttelyitä, juhlia, tanssiesityksiä, konsertteja ja vaikka mitä muuta. Iso "sali", valkoiset seinät ja tilaa jakavat pilarit ovat jo nyt innoittaneet taiteilijoita ja tekijöitä kehittämään uutta ja ennen kokematonta.</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="7" model="games.event">
+        <field type="CharField" name="title">Arissa I: Kadotetun taivaan alla</field>
+        <field type="TextField" name="details">Jos hiivit yksin illalla sydänaukiolle, voit kuulla sen. Kupolinsa alla pauhaavan Paimenen sydämen rytmin- kumean, onton lohdullisen, lopullisen. Elämän sykkeen. Arissan haukkovan ja ahneen hengityksen.
+
+Kaupunki on elossa. Se itkee, nauraa, vihaa ja rakastaa holvikattonsa alla ja haparoi käsillään kohti Rakentajien taivasta. Se raivoaa Kirotun petosten tähden, painuu tuskasta kumaraan ja odottaa, aina vain odottaa. Se rakastaa pakahduttavalla voimalla ja juopuu onnesta keinovalojen syleilyssä. Se lukitsee portit, piirtää viimeisen rajan pimeyttä vastaan ja vartioi elämän hentoa tulta. Me olemme turvassa, se kuiskaa, muttei kerro ketä pakenemme.
+
+Se on meissä ja me olemme sen sydänveri. Me olemme jokainen kiivas hengenveto, jokainen elämää janoava lyönti kylkiluiden metallisessa häkissä. Me olemme Arissan sydän, ja se tekee tästä kaupungista yhtä aikaa voittamattoman ja petollisen hauraan.
+
+Me olemme kansalaisia, sektoreita, valvojia, johtajia, seuraajia, uskovia, etsijöitä, elvyttäjiä ja parantajia. Me olemme Rakentajien lapsia. Me olemme elossa niin kauan, että kynttilämme puhalletaan ja tuhkamme sirotellaan kuolleiden tasangolle harmaaseen mereen. Arissa on elossa niin kauan kuin sen kaduilla on meidän askeleitamme ja Rakentajien taivas pysyy pilvessä.
+
+Me elämme. Me odotamme. Silti toisinaan, kun Arissa hymyilee ja kivi allani tuntuu laulavan, en voi olla kysymättä itseltäni, emmekö me ole jo kotona
+
+Arissa on crossgenre-henkinen liveroolipeli suljetusta kaupungista, sen kaduista ja ennen kaikkea sen asukkaista. Peli pyrkii elävöittämään Arissan kansalaisten elämää ja sen haasteita, muutoksia ja arkea. Mukana on tavallista kansalaisen elämää, juonittelua, toimintaa, ihmissuhteita, suuria tunteita ja epiikkaa. Pääpaino on kuitenkin ihmisten arjella -työllä, ihmissuhteilla, ratkaisuilla, totuuksilla ja valheilla - jota muut elementit höystävät.
+
+Arissaan ovat tervetulleet kaikki 18 vuotta täyttäneet pelaajat aloittelijoista kokeneisiin. Toivomme pelaajilta kykyä innostua, eläytyä ja heittäytyä osaksi suljetun kaupungin arkea ja sen pieniä mullistuksia.
+
+Pelissä käytetään kampanjan omaa sääntöjärjestelmää, joka pohjaa pääasiallisesti eläytymiseen ja terveeseen järkeen. Mukaan mahtuu 40 pelaajaa, jotka valitaan hahmoihin soveltuvuutensa perusteella. Pelimaksu on 20 euroa.
+
+    arissalarp (at) hotmail.com
+    http://arissalarp.blogspot.com/
+</field>
+        <field type="DateTimeField" name="when_from">2013-08-23T21:00:00+00:00</field>
+        <field type="DateTimeField" name="when_to"><None></None></field>
+        <field to="games.venue" name="where" rel="ManyToOneRel">7</field>
+        <field type="IntegerField" name="fee">20</field>
+        <field to="games.game" name="game" rel="ManyToOneRel"><None></None></field>
+        <field type="DateTimeField" name="created">2012-11-06T17:51:57.105656+00:00</field>
+        <field type="DateTimeField" name="modified">2012-11-06T17:53:04.446496+00:00</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="6" model="games.event">
+        <field type="CharField" name="title">Harry ja patonkien maa</field>
+        <field type="TextField" name="details">Sota on ohi ja uusi aika on koittanut. Palasin Tylypahkaan 8.vuodeksi, sillä viime vuonna opiskelusta ei tullut oikein mitään. Opettajat ovat viime aikoina innostuneet kansainvälistymisestä, sanovat, että globalisaatio on tie tulevaisuuteen. En vain oikein osaa yhdistää tätä siihen, miksi ajelemme nyt Ranskan maaseudulla kirkkaansinisessä kolisevassa bussissa jonnekin hevon kuuseen. Ristin sielua ei näy mailla halmeilla, onko tämä sitten sitä kuuluisaa globalisaatiota? Toisaalta sanotaan, että ranskalaiset ovat romanttista sakkia, ja niitähän tässä on kanssamme puoli bussillista, että ehkä ei ole valittamista...
+
+Harry ja patonkien maa on J.K.Rowlingin luomaan Harry Potter -maailmaan sijoittuva liveroolipeli. Tapahtumat sijoittuvat kevääseen 1999 Ranskaan Champagnen maakuntaan, johon Tylypahkan ja Beauxbatonsin oppilaat ovat yhdessä lähteneet kansainvälistymisleirille. Peli koostuu draamasta, romantiikasta, huumorista ja jossain määrin myös mysteeristä ja toiminnasta. Hahmot tehdään puoliksi itse ja puoliksi pelinjohdon toimesta, ja ne voivat olla joko suoraan kirjoista tai originaaleja. Pelimaksu on 20-25 euroa, summa tarkentuu myöhemmin. Se sisältää majoituksen ja ruokailun koko viikonlopuksi. Peli sopii hyvin myös aloittelijoille ja ensikertalaisille. Pelin ikäraja on 15 vuotta ja mukaan mahtuu maksimissaan 47 pelaajaa.
+
+    Elli Ojaniemi
+    epellarp (at) gmail.com
+    http://purplie.net/hplarp
+    https://www.facebook.com/events/284424234995744/</field>
+        <field type="DateTimeField" name="when_from">2013-04-25T21:00:00+00:00</field>
+        <field type="DateTimeField" name="when_to">2013-04-27T21:00:00+00:00</field>
+        <field to="games.venue" name="where" rel="ManyToOneRel">6</field>
+        <field type="IntegerField" name="fee">20</field>
+        <field to="games.game" name="game" rel="ManyToOneRel"><None></None></field>
+        <field type="DateTimeField" name="created">2012-11-06T17:48:20.452429+00:00</field>
+        <field type="DateTimeField" name="modified">2012-11-06T17:48:37.350514+00:00</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="4" model="games.event">
+        <field type="CharField" name="title">Siikalahti 1918</field>
+        <field type="TextField" name="details">Tammikuu 1918. Venäjän lisäksi myös Ranska, Ruotsi ja Saksa ovat juuri tunnustaneet Suomen itsenäisyyden. On tätä odotettukin, on tehty töitä, vaarannettu ja uhrattu paljon! Ja nyt vihdoin se on todellisuutta: itsenäisyys! Juhlatunnelmasta huolimatta moni on hieman huolissaan, sillä tulevaisuus näyttää epävarmalta: eri puolilta kantautuu huolestuttavia tarinoita mellakoista ja punakaartien aseharjoituksista ja maassa on yhä venäläistä sotaväkeäkin. Siikalahdellakin moni arkailee kulkea iltaisin työväentalon ohitse, sen verran hurjaa menoa siellä nykyään kuuluu olevan. Kenelle kuuluu valta Suomenmaassa ja mikä on nuoren valtion tulevaisuus?
+
+Päin nousevan Suomen rantaa on kolmiosaisen Siikalahti 1918 -pelisarjan ensimmäinen peli, joka ajoittuu tammikuun 1918 alkupäiviin. Sisällissota ei ole vielä alkanut ja Siikalahden vallasväki kokoontuu juhlimaan juuri saavutettua itsenäisyyttä ja alkanutta uutta vuotta. Kyseessä on tunnelmapainotteinen juhlapeli, jossa asioita tarkastellaan valkoisten näkökulmasta, sarjan toinen peli keskittyy puolestaan punaisten näkökulmaan. Pelissä on 26 hahmoa, joista osa pelikohtaisia, osa jatkohahmoja. Ikäraja pelissä on 18 vuotta. Pelimaksu tullee olemaan 10-15 euroa. Ilmoittautuminen aukeaa syyskuussa.
+
+    Miira Oksanen ja Jenna Stålhammar
+    siikalahti1918 (at) gmail.com
+    http://siikalahti.webs.com/
+    https://www.facebook.com/events/254477698004778/
+</field>
+        <field type="DateTimeField" name="when_from">2013-01-18T22:00:00+00:00</field>
+        <field type="DateTimeField" name="when_to"><None></None></field>
+        <field to="games.venue" name="where" rel="ManyToOneRel">4</field>
+        <field type="IntegerField" name="fee">10</field>
+        <field to="games.game" name="game" rel="ManyToOneRel"><None></None></field>
+        <field type="DateTimeField" name="created">2012-11-06T17:41:08.167465+00:00</field>
+        <field type="DateTimeField" name="modified">2012-11-06T17:44:00.473746+00:00</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="2" model="games.event">
+        <field type="CharField" name="title">Grimpen IV: Totuuden yö</field>
+        <field type="TextField" name="details">Bernshallen metsästysmajaan on harvoin kokoontunut näin suuri tahi näin arvovaltainen joukko ihmisiä; löytyy kenraaleita, kardinaaleja, tiedustelupalvelun päälliköitä ja surullisenkuuluisan Grimpen-suvun edustajia, jopa suvun päämies sir Peter Grimpen. Mitä varten he kaikki ovat täällä nyt pitkäperjantaina, kun paikalliset väittävät pahan voimien olevan vahvimmillaan? Liittyykö tämä kaikki Valkorannan uudenvuoden juhlien skandaaliin, Königsbachin verilöylyyn vaiko Grimpen-suvun epäonnistuneisiin Halloween-juhliin? Hämärä laskeutuu ja pimeys tihenee, kun menneisyyden varjot kolkuttavat ovella ja on aika rikkoa salaisuuksien ja valheiden kahleet...
+
+Grimpen-sarjan neljäs osa sijoittuu Sveitsiin Thurgaun kantoniin kuvitteelliseen Fürsthallen kuntaan vuoden 2012 pitkäperjantaihin. Liikemies ja intohimoinen metsästäjä Albert Bern on päättänyt järjestää suuren metsästystapahtuman ja useat korkea-arvoiset henkilöt ovat saapuneet paikalle. Maagista realismia, jännitystä, juonittelua ja kauhuelementtejä sisältävä tunnelmoiva peli pelataan Nuuksiossa Lärkansin partiomajassa. Pelaajahahmoja on n. 35 ja pelimaksu tulee kulkemaan 25-30 euron alueella. Pelin ikäraja on 16 vuotta.
+
+    Teppo Suontakanen, grimpenin.pelinjohto (at) gmail.com
+    http://grimpen.webs.com/
+    https://www.facebook.com/events/438041129563926/</field>
+        <field type="DateTimeField" name="when_from">2012-11-23T22:00:00+00:00</field>
+        <field type="DateTimeField" name="when_to"><None></None></field>
+        <field to="games.venue" name="where" rel="ManyToOneRel">2</field>
+        <field type="IntegerField" name="fee">35</field>
+        <field to="games.game" name="game" rel="ManyToOneRel"><None></None></field>
+        <field type="DateTimeField" name="created">2012-11-06T17:20:11.542714+00:00</field>
+        <field type="DateTimeField" name="modified">2012-11-06T17:44:06.278576+00:00</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="3" model="games.event">
+        <field type="CharField" name="title">Ikuisuuden kehä 3: Glory of Rome</field>
+        <field type="TextField" name="details">Keisari Neron itsemurhan jälkeen vuonna 68 nousi valtaan keisari Galba, mutta vuosi 69 toi tullessaan joukon verisiä sisällissotia ja peräti 3 julistusta keisariksi saman vuoden aikana. Galba, Otho, Vitellius ja voittajaksi selviytynyt keisari Vespasianus. Uusi voitokas keisari on järjestänyt lukuisia juhlia niin uskollisille seuraajilleen kuin poliittisille kilpailijoilleen, joiden on aika oppia kenen käsissä valta on.
+
+IK3 sijoittuu sotaisan vuoden loppuun ja keisarin tukijoiden voitonjuhliin. Tunnelmaltaan peli haluaa tavoittaa poliittisen juonittelun ja sosiaalisen dekadenssin keisariajan Roomasta. Peli ei pyri olemaan täydellisen tarkka historiallinen peli, mutta ammentaa faktoja fiktion kautta. Hahmoja tulee olemaan 40-60 kpl ja pelin kesto on n. 6-7h. Pelimaksu 20e ja pelipaikkana toimii Pihlajamäen nuorisotalo Helsingissä. Sääntöjärjestelmänä käytetään tuttua ja turvallista KPJ eli käytä-prkl-järkeäsi. Kaikki tarkemmat säännöt löytyvät pelin kotisivuilta.
+
+    Samu Iiskola, ikuisuudenkeha (at) gmail.com
+    http://ikuisuudenkeha.weebly.com/index.html
+</field>
+        <field type="DateTimeField" name="when_from">2012-11-14T22:00:00+00:00</field>
+        <field type="DateTimeField" name="when_to"><None></None></field>
+        <field to="games.venue" name="where" rel="ManyToOneRel">3</field>
+        <field type="IntegerField" name="fee">20</field>
+        <field to="games.game" name="game" rel="ManyToOneRel"><None></None></field>
+        <field type="DateTimeField" name="created">2012-11-06T17:23:20.617903+00:00</field>
+        <field type="DateTimeField" name="modified">2012-11-06T17:44:11.388938+00:00</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="1" model="games.event">
+        <field type="CharField" name="title">Pohjoisen kansa - Jäätynyt virta</field>
+        <field type="TextField" name="details">Mitä helvettiä täällä on tapahtunut?
+Ne veivät sen. Ne veivät sen, ja Igranovin pää oli pitkin seinää. PITKIN SEINÄÄ! Te ette tiedä mihin sekaannutte.
+
+Duga Poljanan tutkimusasema hiljentyi muutama päivä sitten ja tutkimuksissa saatiin selville että terroristiryhmä kultisteja jotka nimittävät itseään Aamunkoiton Veljeskunnaksi piti sitä vallassaan. Jugoslavian hallitus huusi apua ja päivässä kasaan saatu kansainvälinen iskujoukko on nyt valmiuksissa iskemään asemalle, vapauttamaan panttivangit sekä tuomaan sekopäät kansainvälisen tuomioistuimen eteen. Mutta harva tietää, mitä syrjäisellä asemalla keskellä metsiä voikaan tapahtua, varsinkin kun taivas on synkkä ja paksun tuntuisessa ilmassa maistuu veri...
+
+Animus Vitae on vuoteen 1981 Jugoslaviaan, syrjäiselle ja äkillisesti hiljenneelle tutkimusasemalle sijoittuva voimakasteemainen roolipeli synkeissä tunnelmissa 50 halukkaalle. Peli keskittyy mysteerinratkontaan, toimintaan ja tiukoissa tilanteissa yhteen hiileen puhaltamiseen ja sitä suositellaan erityisesti aiemmin J.K.Rowlingin HP-maailmaan sijoittuvia pelejä kokeilemattomille tai karsastaville.Peli pelataan lauantaina, kesto n.8 tuntia.
+
+Teemojen ja kovan proppauksen johdosta pelissä on ikäraja 18, josta voidaan tosin joustaa tapauskohtaisesti fiksujen yksilöiden kohdalla.
+
+    Ville Miettinen (0414515527), Antti Iso-Markku &amp; Supporting Crew
+    animuslarp (at) gmail.com
+    http://www.animuslarp.webs.com
+    https://www.facebook.com/events/193844977416246/</field>
+        <field type="DateTimeField" name="when_from">2012-11-09T22:00:00+00:00</field>
+        <field type="DateTimeField" name="when_to"><None></None></field>
+        <field to="games.venue" name="where" rel="ManyToOneRel">1</field>
+        <field type="IntegerField" name="fee">28</field>
+        <field to="games.game" name="game" rel="ManyToOneRel"><None></None></field>
+        <field type="DateTimeField" name="created">2012-11-06T17:16:47.502003+00:00</field>
+        <field type="DateTimeField" name="modified">2012-11-06T17:44:15.677910+00:00</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+    <object pk="5" model="games.event">
+        <field type="CharField" name="title">Vesper</field>
+        <field type="TextField" name="details">By the pricking of my thumbs
+Something wicked this way comes
+
+Peli sijoittuu 50-luvun Englantiin, vuoteen 1953. Hylätyllä lastenkodilla on alkamassa yhteentörmäys, jota kukaan ei voi enää välttää. Kun yhteiskuntaluokat eivät enää merkitsekään mitään ja oudosta tulee todellista, mitä tehdä?
+
+Peli kestää perjantaista sunnuntaihin, kustantaen pelimaksuna 35 euroa ja loikkien genrerajojen ohitse paljoa niistä välittämättä. Hahmoja pelissä on kolmestakymmenestä neljäänkymmeneen, näistä osa osallistuen mahdollisesti peliin vain lyhyemmän ajanjakson. Peliin ilmoittaudutaan erillisellä lomakkeella, jonka löytää pelin sivuilta.
+
+    http://vesperlarp.weebly.com/
+    P. Kapri, vesperlarp (at) gmail.com</field>
+        <field type="DateTimeField" name="when_from">2012-01-11T22:00:00+00:00</field>
+        <field type="DateTimeField" name="when_to">2012-01-13T22:00:00+00:00</field>
+        <field to="games.venue" name="where" rel="ManyToOneRel">5</field>
+        <field type="IntegerField" name="fee">35</field>
+        <field to="games.game" name="game" rel="ManyToOneRel"><None></None></field>
+        <field type="DateTimeField" name="created">2012-11-06T17:42:36.650912+00:00</field>
+        <field type="DateTimeField" name="modified">2012-11-06T17:44:19.319852+00:00</field>
+        <field type="BooleanField" name="approved">True</field>
+    </object>
+</django-objects>

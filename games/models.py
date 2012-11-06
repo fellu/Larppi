@@ -14,6 +14,7 @@ class Venue(models.Model):
     city = models.CharField(max_length=255, verbose_name=u"Kaupunki")
     address = models.CharField(blank=True, null=True, max_length=255, verbose_name=u"Osoite")
     description = models.TextField(blank=True, null=True, verbose_name=u"Kuvaus")
+    approved = models.BooleanField(default=False, verbose_name=u"Hyväksytty listalle")
 
     def __unicode__(self):
         return self.name
@@ -30,6 +31,7 @@ class Event(models.Model):
     game = models.ForeignKey(Game, editable=False, blank=True, null=True, verbose_name=u"Peli")
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
+    approved = models.BooleanField(default=False, verbose_name=u"Hyväksytty listalle")
 
     class Meta:
         ordering = ['-when_from']

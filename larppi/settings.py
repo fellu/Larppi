@@ -22,6 +22,9 @@ DATABASES = {
 
 TIME_ZONE = 'Europe/Helsinki'
 LANGUAGE_CODE = 'en-us'
+DATE_FORMAT = "d.m.Y"
+TIME_FORMAT = 'H:i'
+DATETIME_FORMAT = 'd.m.Y H:i'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
